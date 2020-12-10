@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Attendance table</title>
+	</head>
+	<body>
+		<!-- Sr-only main heading -->
+		<h1 class="sr-only">The page is about getting info abou students</h1>
+
+		<div class="container">
+			<!-- User input Form -->
+			<form
+				class="date__form"
+				action="https://echo.htmlacademy.ru/"
+				method="GET"
+			>
+				<div class="form-group my-5 w-50 mx-auto">
+					<input
+						class="date__input-choice form-control js-date__input-choice"
+						type="date"
+						name="user_data"
+					/>
+				</div>
+			</form>
+
+			<!-- Attendance result student'S' -->
+			<table class="attendance__table mx-auto mb-4">
+				<thead>
+					<tr>
+						<th>Students</th>
+						<th>Attendance</th>
+						<th>Score</th>
+					</tr>
+				</thead>
+
+				<tbody class="attendance__table-body">
+					<tr>
+						<td>Akrom</td>
+						<td>+</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Ibrohim</td>
+						<td>-</td>
+						<td>5</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- Attendance table for a student -->
+			<table class="attendance__table-student d-none mx-auto">
+				<thead>
+					<tr>
+						<th>Student</th>
+						<th>Attendance Day</th>
+						<th>Visited</th>
+					</tr>
+				</thead>
+
+				<tbody class="attendance__body-student">
+					<tr>
+						<td>Akrom</td>
+						<td>2012-12-09</td>
+						<td>+</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+		<script src="js/lib.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
