@@ -1,5 +1,5 @@
 // Users info
-const students = [{
+export const students = [{
       id: 1,
       name: 'Ilhom',
    },
@@ -18,7 +18,7 @@ const students = [{
 ];
 
 // Attendance data
-const attendance = [{
+export const attendance = [{
       id: 1,
       userId: 1,
       visitDate: '2020-12-09',
